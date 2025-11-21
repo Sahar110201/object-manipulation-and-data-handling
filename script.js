@@ -33,3 +33,14 @@ const scores = [85, 92, 78, 90];
 const [firstScore, secondScore] = scores;
 console.log("First Score:", firstScore);
 console.log("Second Score:", secondScore);
+
+//part 4 spread operator
+const clonedStudent = { ...student };
+
+clonedStudent.graduationYear = 2027;
+console.log("New Cloned Property", clonedStudent);
+
+
+const newCourses = ["Object Orianted Language", "WRIT 220"];
+const allCourses = [...student.courses, ...newCourses];
+console.log("Combined Courses", allCourses);
