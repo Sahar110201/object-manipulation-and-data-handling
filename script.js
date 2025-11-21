@@ -6,6 +6,16 @@ const student = {
 
     infoDisplay: function() {
         return `Name: ${this.name}, Age: ${this.age}, Courses: ${this.courses.join(", ")}`;
+    },
+
+    //part 5
+    addCourse: function(newCourse) {
+        this.courses.push(newCourse);
+        console.log(newCourse + " is added");
+    },
+
+    totalCourses: function() {
+        return this.courses.length;
     }
 };
 
@@ -44,3 +54,11 @@ console.log("New Cloned Property", clonedStudent);
 const newCourses = ["Object Orianted Language", "WRIT 220"];
 const allCourses = [...student.courses, ...newCourses];
 console.log("Combined Courses", allCourses);
+
+//part 5 object method
+//first half of this part is added in part 1
+
+student.addCourse("Application Programing");
+
+console.log("Total courses:", student.totalCourses());
+console.log("Student object updated:", student);
