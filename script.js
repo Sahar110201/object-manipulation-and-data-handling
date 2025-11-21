@@ -11,4 +11,7 @@ const student = {
         console.log(`courses: ${this.courses}`);
     }
 };
-student.infoDisplay();
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.infoDisplay());
